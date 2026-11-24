@@ -1,13 +1,9 @@
-function verificaStringa(stringa) {
-    stringa = stringa.replace(/\W/g, '');
-
-  let inversa = stringa.split('').reverse().join('');
-
-if (stringa == inversa) {
-    return true;
-  } else {
-    return false;
-  }
+function invertiNumeri(numeri) {
+  let invertiti = numeri.reverse();
+  return invertiti;
 }
 
-console.log(verificaStringa('i nasi sani '));
+let decrescente = [40, 28, 19, 12, 6, 2, -3, -8, -15, -22];
+let crescenti = invertiNumeri(decrescente);
+
+console.log(crescenti);
